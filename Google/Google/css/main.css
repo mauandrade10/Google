@@ -1,0 +1,334 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-icon-movile{
+    display: none;
+}
+header nav #todo,#imagenes{
+    display: none;
+}
+
+header nav .nav-right-section{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+nav .nav-right-section a{
+    margin-right: 20px;
+    color: rgba(0,0,0,.87);
+}
+
+nav .nav-right-section .menu-icon img{
+    width: 15px;
+    height: 15px;
+    margin-left: 10px
+}
+    
+nav .nav-right-section .perfil-icon img{
+    width: 33px;
+    height: 33px;
+    border-radius: 50px;
+    margin-left: 10px
+}
+
+main{
+    width: 100%;
+    margin-top: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+main .main-section-image{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+main .main-section-image #logo{
+    width: 272px;
+    height: 92px;
+    cursor: pointer;
+}
+
+main .main-section-input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+main .main-section-input .input-contener{
+    width: 584px;
+    height: 48px;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+main .main-section-input .input-contener:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+
+main .main-section-input .input-contener #input-lens-img{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+
+main .main-section-input .input-contener #input-search{
+    width: 443px;
+    border: none;
+    outline: none;
+}
+
+
+main .main-section-input .input-contener #input-voice-img{
+    width: 22px;
+    height: 33px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+main .main-section-input .input-contener #input-search-img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+main .btn-search{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+main .btn-search div{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 0 6px;
+    padding: 0 16px;
+    height: 34px;
+    width: 123px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main .btn-search div:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+main .btn-search div #search, #lucky{
+    font-size: 14px;
+}
+
+main .main-section-info{
+    margin-top: 10px;
+    color: #4d5156;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+main .main-section-info a:hover{
+    color: #1a0dab;
+}
+
+main .main-section-info a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    width: 100%;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+}
+
+footer section{
+    height: 46px;
+    width: 100%;
+}
+
+footer .footer-section-bellow{
+    display: flex;
+    border-top: 1px solid #dadce0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footer-section-bellow div{
+    margin: 0 10px 0 33px;
+}
+
+footer .footer-section-bellow div ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-section-bellow div ul li{
+    padding-right: 20px;
+}
+
+footer .footer-section-bellow div ul li a{
+    color: #70757a;
+    font-size: 14px;
+}
+
+footer .footer-section-bellow div ul li a:hover{
+    text-decoration: underline;
+}
+
+
+footer .footer-section-top{
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-section-top p{
+    color: #70757a;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+footer .footer-movile-bellow{
+    display: none;
+}
+
+@media (max-width: 640px) {
+
+    header nav{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    header nav .nav-icon-movile{
+        display: block;
+        width: 25px;
+        height: 25px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+
+    header nav #todo,#imagenes{
+        display: block;
+        color: #70757a;
+        margin: 0 10px;
+    }
+
+    header nav #todo{
+        border-bottom: 1px solid #1a0dab;
+        color: #1a0dab;
+    }
+
+    header nav .nav-right-section{
+        justify-content: flex-end;
+        margin-right: 0;
+    }
+
+    nav .nav-right-section #gmail{
+        display: none;
+    }
+    nav .nav-right-section #images{
+        display: none;
+    }
+
+    main{
+        margin-top: 100px;
+    }
+
+    main .main-section-image #logo{
+        width: 153px;
+        height: 50px;
+        margin-bottom: 30px;
+    }
+
+    main .main-section-input {
+        width: 85%;
+        margin: auto;
+    }
+
+    main .main-section-input .input-contener #input-search{
+        width: 200px;
+        border: none;
+        outline: none;
+    }
+
+    main .btn-search{
+        display: none;
+    }
+
+    footer .footer-section-bellow{
+        display: none;
+    }
+
+    footer{
+        height: 220px;
+    }
+
+    footer .footer-movile-bellow{
+        display: block;
+    }
+
+    footer .footer-movile-bellow .medium{
+        height: 46px;
+        border-top: 1px solid #dadce0;
+        border-bottom: 1px solid #dadce0;
+    }
+
+    footer .footer-movile-bellow .bellow ul{
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    footer .footer-movile-bellow .bellow ul li{
+        margin: 10px 25px;
+    }
+
+    footer .footer-movile-bellow .bellow ul li a{
+        color: #70757a;
+    }
+
+}
